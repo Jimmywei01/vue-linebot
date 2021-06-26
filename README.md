@@ -1,6 +1,5 @@
-# vue-linebot
-Vue+Dashboard+LineBot
+# vue-linebot 使用方式
 
-### 使用方式
 LineID：@637lkmfj
-[Dashboard_Line_login](https://linbot-jimmy.herokuapp.com/)
+
+後台：[Dashboard_Line_login](https://linbot-jimmy.herokuapp.com/)
