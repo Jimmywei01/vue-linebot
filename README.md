@@ -32,7 +32,7 @@
 <img alt="online_架構_drawio_-_diagrams_net_🔊" src="https://user-images.githubusercontent.com/28379251/123514532-1179dd80-d6c6-11eb-8074-a73018caf418.png" width="100%">
 
 
-### Dashboard 後台
+### Dashboard
 <img width="1066" alt="online_架構_drawio_-_diagrams_net_🔊" src="https://user-images.githubusercontent.com/28379251/123514642-982eba80-d6c6-11eb-8124-7ec2b9e1df44.png">
 
 
@@ -41,7 +41,7 @@
 
 
 ## 功能
-**Dashboard**
+**前端 Dashboard**
 - User 可使用 Line 登入，顯示對應頁面＆選項
 - User 可使用 一般註冊登入，顯示對應頁面＆選項
 - User 可以對機車、詳細資料進行新增、修改、刪除、查詢篩選
