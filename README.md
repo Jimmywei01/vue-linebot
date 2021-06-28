@@ -1,3 +1,27 @@
+<p align="center">
+  <a href="https://github.com/vuejs/vue">
+    <img src="https://img.shields.io/badge/vue-2.6.11-brightgreen.svg" alt="vue">
+  </a>
+  <a href="https://github.com/ElemeFE/element">
+    <img src="https://img.shields.io/badge/element--ui-2.15.0-brightgreen.svg" alt="element-ui">
+  </a>
+  <a href="https://manager.line.biz/">
+    <img src="https://img.shields.io/badge/line-2.1.0-brightgreen" alt="line">
+  </a>
+  <a href="https://github.com/axios/axios">
+    <img src="https://img.shields.io/badge/axios-0.21.1-brightgreen" alt="axios">
+  </a>
+  <a href="https://github.com/nodejs/Release">
+    <img src="https://img.shields.io/badge/node.js-12.x-brightgreen" alt="node.js">
+  </a>
+  <a href="https://github.com/expressjs/express">
+    <img src="https://img.shields.io/badge/express-4.17.1-brightgreen" alt="express">
+  </a>
+  <a href="https://github.com/sidorares/node-mysql2">
+    <img src="https://img.shields.io/badge/mysql2-2.2.5-brightgreen" alt="mysql2">
+  </a>
+</p>
+
 ## 簡介
 是一個前後台練習專案，可利用 Linbot 查詢機車資訊
 由 Line 第三方登入、一般註冊登入，進入 Dashboard 後台設定資料，Linebot 顯示回覆 User 資料
