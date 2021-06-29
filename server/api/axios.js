@@ -33,13 +33,11 @@ async function imgurAPI (image) {
 }
 
 async function lineLoginAPI (params) {
-  console.log('params:', params)
   let lineInfo = ""
   // let data = qs.stringify(params)
   // let payload= 'grant_type=authorization_code&code=' + code + '&redirect_uri=' + redirectUri + '&client_id=' + lineID + '&client_secret=' + lineSecret
   // let payload = `${params.grant_type}&code=${params.code}&client_id=${params.client_id}&client_secret=${params.client_secret}&redirect_uri=https://88dac91121c5.ngrok.io`
   let payload = `${params.grant_type}&code=${params.code}&client_id=${params.client_id}&client_secret=${params.client_secret}&redirect_uri=${params.redirect_uri}`
-  // console.log(data)
   const config = {
     method: "post",
     url: "https://api.line.me/oauth2/v2.1/token",
