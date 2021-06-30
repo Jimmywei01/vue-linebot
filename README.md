@@ -59,6 +59,10 @@
 
 ## 使用方式
 
+一般登入
+- email: admin@gmail.com
+- password: 123123qwe
+
 Line 後台資料設定：[Dashboard_Line_login](https://linbot-jimmy.herokuapp.com/)
 
 LineID：@637lkmfj
