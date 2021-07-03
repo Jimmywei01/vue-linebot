@@ -96,67 +96,23 @@ router.beforeEach(async (to, from, next) => {
       } else {
         // refreash 重新打 api 是因為 Vuex 不會儲存資料 -> 重新取得 user 資料
         await store.dispatch('login/getuser', isLogin)
-        console.log('auth2-2')
         // refreash 重新取權限資料，設定 router children
         const refreash = await store.getters.user
         await store.dispatch('permission/generateRoutes', refreash.identity)
-        // await store.dispatch('motoHouse/getMoto')
-        // await store.dispatch('order/getOrder')
-        // await store.dispatch('store/getStore')
-        // await store.dispatch('member/getMembers')
         next()
       }
     }
-  // }
-  // else if (identity === 'user') {
-  //   console.log('auth3')
-  //   whitelist = [
-  //     '/login',
-  //     '/register',
-  //     '/',
-  //     '/moto',
-  //     '/motoDetail',
-  //     '/user',
-  //     '/userOrder'
-  //   ]
-  //   if (whitelist.find(i => to.path.search(i) !== -1)) {
-  //     console.log('auth3-1')
-  //     // 白名單顯示全部 moto 資料
-  //     // await store.dispatch('motoHouse/getMoto')
-  //     // await store.dispatch('member/getMembers')
-  //     // await store.dispatch('order/getOrder')
-  //     // await store.dispatch('store/getStore')
-  //     next()
-  //   } else {
-  //     next({ path: '/' })
-  //   }
-    // 沒權限
+  // 沒權限
   } else {
-    console.log('auth4')
-    // whitelist = ['Login', 'Register', 'HomePage', 'Moto', 'MotoDetail', 'Dashboard']
-    // whitelist = ['Login', 'Register', 'Dashboard', 'Member', 'Order', 'MotoHouse', 'Store', 'Analysis']
     whitelist = ['Login', 'Register']
     if (whitelist.find(i => to.name.search(i) !== -1)) {
-      console.log('auth4-1')
-      // await store.dispatch('motoHouse/getMoto')
-      // await store.dispatch('order/getOrder')
-      // await store.dispatch('store/getStore')
-      // await store.dispatch('member/getMembers')
       next()
     } else {
       if (!isLogin) {
-        console.log('auth4-2')
-        console.log(isLogin)
-        // router.push('/login')
         next({ path: '/login' })
       }
-      // console.log('auth5')
-      // next()
-      // next({ path: '/' })
       next()
     }
-    // console.log('auth6')
-    // // next({ path: '/login' })
     next()
   }
 })
