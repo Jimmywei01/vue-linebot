@@ -37,15 +37,6 @@
           </template>
         </el-table-column>
 
-        <!-- <el-table-column
-          label="數量"
-          align='center'
-          width="180">
-          <template slot-scope="{row}">
-              <p>{{ row.numbers }}</p>
-          </template>
-        </el-table-column> -->
-
         <el-table-column
           label="Actions"
           align='center'
